@@ -1,7 +1,10 @@
 import express from "express";
+import { PORT } from "~/constants";
+
+console.log(`PORT: ${PORT}`);
 
 const app = express();
-const port = 8080; // default port to listen
+const port = PORT; // default port to listen
 
 // define a route handler for the default home page
 app.get("/", (req, res) => {

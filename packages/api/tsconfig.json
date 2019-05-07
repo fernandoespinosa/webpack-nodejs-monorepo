@@ -1,0 +1,20 @@
+{
+    "extends": "../../tsconfig.settings.json",
+    "compilerOptions": {
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "baseUrl": "./src",
+        "paths": {
+            "~/*": ["*"]
+        },
+        "plugins": [{
+            "transform": "../../config/absoluteToRelative.ts",
+            "afterDeclarations": true
+        }],
+        "resolveJsonModule": true
+    },
+    "references": [{
+        "path": "../shared"
+    }],
+    "exclude": ["dist", "node_modules"]
+}

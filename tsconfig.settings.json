@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+
+    "rootDir": ".",
+    "baseUrl": "./packages",
+    "paths": {
+      "@foo/*": ["./*/src"]
+    },
+
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+
+    "strict": true,
+    "esModuleInterop": true,
+    "emitDeclarationOnly": true,
+    "jsx": "react",
+    "lib": ["es2017", "dom", "esnext.asynciterable"]
+  }
+}
