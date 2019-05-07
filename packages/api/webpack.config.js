@@ -1,8 +1,9 @@
-var path = require("path");
+const path = require("path");
+const CleanWebpackPlugin = require("clean-webpack-plugin");
 
 module.exports = {
   target: "node",
-  entry: "./index.js",
+  entry: "./src/index.ts",
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js"
@@ -11,11 +12,9 @@ module.exports = {
     rules: [
       {
         test: /\.ts$/,
-        loader: "babel-loader",
-        options: {
-          presets: [["env", { targets: { node: "current" } }]]
-        }
+        loader: "babel-loader"
       }
     ]
-  }
+  },
+  plugins: [new CleanWebpackPlugin()]
 };
