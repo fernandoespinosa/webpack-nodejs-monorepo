@@ -1,6 +1,12 @@
 {
   "name": "@foo/shared",
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -b ."
+  }
 }

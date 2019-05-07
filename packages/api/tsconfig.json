@@ -5,7 +5,8 @@
         "rootDir": "./src",
         "baseUrl": "./src",
         "paths": {
-            "~/*": ["*"]
+            "~/*": ["*"],
+            "@foo/shared": ["../shared"]
         },
         "plugins": [{
             "transform": "../../config/absoluteToRelative.ts",

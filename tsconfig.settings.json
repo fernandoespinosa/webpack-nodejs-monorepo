@@ -6,7 +6,7 @@
     "rootDir": ".",
     "baseUrl": "./packages",
     "paths": {
-      "@foo/*": ["./*/src"]
+      "@foo/shared": ["./shared"]
     },
 
     "composite": true,
