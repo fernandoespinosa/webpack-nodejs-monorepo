@@ -2,19 +2,11 @@
   "compilerOptions": {
     "target": "es6",
     "module": "commonjs",
-
-    "rootDir": ".",
-    "baseUrl": "./packages",
-    "paths": {
-      "@foo/shared": ["./shared"]
-    },
-
-    "composite": true,
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
-
     "strict": true,
+    "composite": true,
     "esModuleInterop": true,
     "emitDeclarationOnly": true,
     "jsx": "react",

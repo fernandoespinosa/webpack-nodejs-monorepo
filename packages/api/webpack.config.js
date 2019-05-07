@@ -19,16 +19,7 @@ module.exports = {
         test: /\.ts$/,
         loader: "babel-loader",
         options: {
-          presets: [
-            [
-              "@babel/preset-typescript",
-              {
-                targets: {
-                  node: true
-                }
-              }
-            ]
-          ]
+          presets: ["@babel/preset-typescript"]
         }
       }
     ]

@@ -1,18 +1,16 @@
 {
-    "extends": "../../tsconfig.settings.json",
+    "extends": "../tsconfig.settings.json",
     "compilerOptions": {
-        "outDir": "./dist",
-        "rootDir": "./src",
-        "baseUrl": "./src",
+        "outDir": "dist",
+        "rootDir": "src",
+        "baseUrl": "src",
         "paths": {
             "~/*": ["*"]
         },
         "plugins": [{
             "transform": "../../config/absoluteToRelative.ts",
             "afterDeclarations": true
-        }],
-        "resolveJsonModule": true
+        }]
     },
-    "include": ["./src"],
-    "exclude": ["./dist", "./node_modules"]
+    "exclude": ["dist", "node_modules"]
 }

@@ -1,12 +1,11 @@
 {
-    "extends": "../../tsconfig.settings.json",
+    "extends": "../tsconfig.settings.json",
     "compilerOptions": {
-        "outDir": "./dist",
-        "rootDir": "./src",
-        "baseUrl": "./src",
+        "outDir": "dist",
+        "rootDir": "src",
+        "baseUrl": "src",
         "paths": {
-            "~/*": ["*"],
-            "@foo/shared": ["../shared"]
+            "~/*": ["*"]
         },
         "plugins": [{
             "transform": "../../config/absoluteToRelative.ts",
