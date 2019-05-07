@@ -19,6 +19,7 @@
     "packages/*"
   ],
   "scripts": {
-    "start": "lerna exec yarn start"
+    "start": "lerna exec yarn start",
+    "build": "lerna exec yarn build"
   }
 }
