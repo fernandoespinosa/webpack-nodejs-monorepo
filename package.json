@@ -5,5 +5,8 @@
   "repository": "https://github.com/fernandoespinosa/webpack-nodejs-monorepo.git",
   "author": "Fernando Espinosa <fernandoespinosa@fernandoespinosa.org>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "lerna": "^3.13.4"
+  }
 }
