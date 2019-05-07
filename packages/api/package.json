@@ -4,8 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node .",
-    "build": "tsc --build yarn"
+    "start": "yarn build && node ./dist/bundle.js",
+    "build": "webpack --config webpack.config.js"
   },
   "dependencies": {
     "express": "^4.16.4"
