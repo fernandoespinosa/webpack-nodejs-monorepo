@@ -1,0 +1,9 @@
+{
+  "name": "webpack-nodejs-monorepo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/fernandoespinosa/webpack-nodejs-monorepo.git",
+  "author": "Fernando Espinosa <fernandoespinosa@fernandoespinosa.org>",
+  "license": "MIT",
+  "private": true
+}
